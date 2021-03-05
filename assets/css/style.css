@@ -6,13 +6,13 @@
     margin: 0;
     padding: 0;
     border: 0;
-    
 }
 
 Body {
     color: #F0F1EB;
     font-family: 'Orbitron';
     letter-spacing: 0px;
+    height: 100%;
     background-color: #96F09E;
 }
 
@@ -67,6 +67,10 @@ p {
 }
 
 /*---------------------------- Body Content -----------------------------*/
+.container-fluid {
+    padding-bottom: 60px; /*This is the height of the footer - ensures that content is not hidden behind the footer*/
+}
+
 .content { /*dictates the distance between the navbar and the start and join quiz boxes*/
     margin: 10% 0%;
 }
@@ -132,9 +136,13 @@ p {
 /*---------------------------- Footer -----------------------------*/
 footer {
     position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+}
+
+#footer {
+    position:absolute fixed;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
     background: rgb(4,130,67);
     background: linear-gradient(90deg, rgba(4,130,67,1) 0%, rgba(50,191,132,1) 42%, rgba(163,238,220,1) 100%);
     color: #F0F1EB;
